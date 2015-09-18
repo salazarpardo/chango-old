@@ -1,0 +1,47 @@
+<template name="user">
+
+	<div data-role="view" id="drawer-user" data-layout="drawer-layout" data-title="{{username}}" data-use-native-scrolling="true">
+	    <ul data-role="listview" data-type="group"  data-style="inset" class="text-center">
+	      <li>Profile
+           <img src="http://lorempixel.com/400/400/" class="km-thumbnail" style="width: 10em; height: 10em; margin: 2em auto; display: block; float: none;">
+	        <ul>{{> loginButtons}} </ul>
+	      </li> 
+	     
+	      <li>
+            <ul>
+                <li data-icon="contacts">Juan Carlos Salazar Pardo</li>
+                <li data-icon="recents">Weekly average contributions <span class="sales-up">$ 8.25</span></li>
+                <li data-icon="recents">Monthly average contributions <span class="sales-up">$ 32</span></li>
+            </ul>
+        </li>
+        <li>
+            Interests
+            <ul>
+                <li>Permaculture <span class="value">Native</span></li>
+                <li>Hiking <span class="value">Advanced</span></li>
+                <li>Dogs <span class="value">Advanced</span></li>
+                <li>Animals <span class="value">Beginner</span></li>
+            </ul>
+        </li>
+        <li>
+            Areas of Interest
+            <ul>
+                <li>La Candelaria</li>
+                <li>Usaquén</li>
+                <li>Chicó</li>
+                <li>Chapinero</li>
+            </ul>
+        </li>
+        <li>
+            Skills
+            <ul>
+                <li>Project Management</li>
+                <li>Web Design</li>
+                <li>Concept Ideation</li>
+                <li>App Development</li>
+            </ul>
+        </li>
+	    </ul>
+	</div>
+
+</template>

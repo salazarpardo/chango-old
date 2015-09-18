@@ -1,0 +1,492 @@
+/* CSS declarations go here */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic,400italic);
+/* line 5, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../scss/chango.scss */
+body, .km-nova, .km-tabstrip .km-button {
+  font-family: 'Open Sans', sans-serif;
+  color: #5F3202;
+  font-size: 16px;
+}
+
+/* line 11, ../scss/chango.scss */
+.km-nova .km-content, .km-nova h1, .km-nova h2, .km-nova h3, .km-nova h4, .km-nova h5, .km-nova h6, .km-nova p, .km-nova .km-list > li, .km-nova a:not([class]), .km-nova .km-external-link {
+  color: #5F3202;
+}
+
+/* line 14, ../scss/chango.scss */
+a {
+  color: #5F3202;
+}
+/* line 16, ../scss/chango.scss */
+a:hover, a:focus {
+  color: #683400;
+  text-decoration: none;
+}
+
+/* line 21, ../scss/chango.scss */
+.map-container {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
+/* line 26, ../scss/chango.scss */
+.geoloc {
+  position: absolute;
+  z-index: 1;
+  top: 1.125rem;
+  right: 1.5rem;
+  font-size: 1.25rem;
+}
+
+/* line 33, ../scss/chango.scss */
+.modal .map-container {
+  height: 200px;
+}
+
+/* line 36, ../scss/chango.scss */
+.infowindow {
+  width: 250px;
+  padding: 0.5rem;
+}
+
+/* line 40, ../scss/chango.scss */
+.km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .km-tabstrip, .km-nova .km-drawer .km-navbar, .navbar, .modal-header {
+  margin: 0;
+  background-color: #FB9A34;
+  -moz-box-shadow: #b4792d 0 -1px inset, rgba(0, 0, 0, 0.1) 0 1px;
+  -webkit-box-shadow: #b4792d 0 -1px inset, rgba(0, 0, 0, 0.1) 0 1px;
+  box-shadow: #b4792d 0 -1px inset, rgba(0, 0, 0, 0.1) 0 1px;
+  border: none;
+  background-image: none;
+}
+
+/* line 47, ../scss/chango.scss */
+.km-nova .km-tabstrip .km-button.km-state-active {
+  background-color: #E17605;
+  background-image: none;
+}
+
+/* line 51, ../scss/chango.scss */
+.km-nova .km-footer .km-tabstrip .km-button {
+  border-radius: 0;
+  cursor: pointer;
+}
+
+/* line 55, ../scss/chango.scss */
+.navbar {
+  padding: 0.875rem;
+}
+
+/* line 58, ../scss/chango.scss */
+.navbar-fixed-bottom, .km-nova .km-tabstrip {
+  box-shadow: inset 0 1px #b4792d, 0 -1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 61, ../scss/chango.scss */
+.modal-dialog {
+  margin: 0 auto;
+}
+
+/* line 64, ../scss/chango.scss */
+.modal-header {
+  border-radius: 6px 6px 0 0;
+}
+
+/* line 67, ../scss/chango.scss */
+.modal-title {
+  color: #683400;
+}
+
+/* line 70, ../scss/chango.scss */
+.capture canvas, .capture img, .capture video {
+  width: 100%;
+}
+
+/* line 73, ../scss/chango.scss */
+.navbar > .container-fluid .navbar-brand {
+  padding: 12px 15px;
+}
+
+/* line 76, ../scss/chango.scss */
+.navbar-brand > img {
+  max-height: 30px;
+}
+
+/* line 79, ../scss/chango.scss */
+.navbar-default .navbar-collapse {
+  border: none;
+}
+
+/* line 82, ../scss/chango.scss */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* line 85, ../scss/chango.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #E69529;
+}
+
+/* line 88, ../scss/chango.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #FFF;
+  color: #f5a31f;
+}
+
+/* line 92, ../scss/chango.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #683400;
+}
+
+/* line 95, ../scss/chango.scss */
+.navbar-btn.navbar-right {
+  margin-right: 0;
+  background-color: transparent;
+  border: none;
+  color: #683400;
+  padding: 0.125rem 1rem;
+  font-size: 1.25rem;
+}
+
+/* line 103, ../scss/chango.scss */
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #683400;
+}
+
+/* line 106, ../scss/chango.scss */
+#login-dropdown-list .dropdown-menu {
+  min-width: 100%;
+  padding: 0.875rem;
+  box-shadow: none;
+  color: #FB9A34;
+}
+
+/* line 112, ../scss/chango.scss */
+#login-dropdown-list a {
+  text-overflow: ellipsis;
+  max-width: 148px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 120, ../scss/chango.scss */
+.km-listview #login-dropdown-list {
+  overflow: visible;
+}
+
+/* line 123, ../scss/chango.scss */
+.km-listview #login-dropdown-list.open > .dropdown-menu {
+  position: relative;
+  margin-top: 1rem;
+}
+
+/* line 127, ../scss/chango.scss */
+.km-listview #login-dropdown-list a {
+  width: 100%;
+  max-width: none;
+  display: block;
+}
+
+/* line 132, ../scss/chango.scss */
+.list-group-item {
+  border-color: #f4dcb6;
+  transition: 0.3s ease-in-out;
+}
+
+/* line 136, ../scss/chango.scss */
+.list-group-item.clearfix {
+  padding: 10px 0 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+}
+
+/* line 144, ../scss/chango.scss */
+.selected {
+  background-color: rgba(245, 163, 31, 0.2);
+}
+
+/* line 147, ../scss/chango.scss */
+.btn-default {
+  color: #FB9A34;
+  border-color: #FDCB96;
+}
+
+/* line 151, ../scss/chango.scss */
+.badge {
+  background-color: #FB9A34;
+}
+
+/* line 154, ../scss/chango.scss */
+.modal-footer {
+  padding: 15px 0;
+}
+
+/* Image input */
+/* line 158, ../scss/chango.scss */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+/* line 161, ../scss/chango.scss */
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+/* line 176, ../scss/chango.scss */
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+/* Bootstrap override styles */
+/* line 181, ../scss/chango.scss */
+.btn-primary, .km-nova .km-button {
+  background-color: #FB9A34;
+  border-color: #C86904;
+  color: #603813;
+}
+/* line 185, ../scss/chango.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .km-nova .km-button:hover, .km-nova .km-button:focus, .km-nova .km-button.focus {
+  background-color: #E17605;
+  border-color: #8B5E23;
+  color: #603813;
+}
+
+/* kendo override styles */
+/* line 192, ../scss/chango.scss */
+.km-nova .km-view-title {
+  min-height: 3.625rem;
+}
+
+/* line 195, ../scss/chango.scss */
+.km-nova .km-tabstrip {
+  min-height: 3rem;
+}
+
+/* line 198, ../scss/chango.scss */
+.km-nova .km-tabstrip .km-button {
+  color: #603813;
+}
+
+/* line 201, ../scss/chango.scss */
+.km-nova .km-tabstrip .km-button .km-icon {
+  height: auto;
+  width: auto;
+  font-size: 1.25rem;
+}
+
+/* line 206, ../scss/chango.scss */
+.km-nova span.km-switch {
+  color: #FB9A34;
+}
+
+/* line 209, ../scss/chango.scss */
+.dropdown .km-group-title {
+  display: none;
+}
+
+/* line 212, ../scss/chango.scss */
+.km-listview-accounts #login-dropdown-list a.dropdown-toggle {
+  max-width: none;
+  padding: 1em;
+  color: #FB9A34;
+  display: block;
+  font-size: 1rem;
+}
+
+/* line 219, ../scss/chango.scss */
+.km-nova .km-list > li {
+  font-size: 1rem;
+  padding: 1rem;
+  border-color: #F6EBE0;
+}
+
+/* line 224, ../scss/chango.scss */
+.km-nova .km-list > .map-container {
+  padding: 0 0.5rem 0.5rem;
+}
+
+/* line 227, ../scss/chango.scss */
+.km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .k-toolbar .km-button, .km-nova .k-toolbar .km-icon, .km-nova .km-tabstrip, .km-nova .km-navbar .km-back:before, .km-nova .k-toolbar .km-back:before, .km-nova .km-navbar .km-button, .km-nova .km-view-title {
+  color: #603813;
+}
+
+/* line 230, ../scss/chango.scss */
+.km-nova .km-drawer .km-list > li, .km-nova .km-drawer .km-list > li > .km-listview-link, .km-nova .km-drawer .km-list > li .km-icon {
+  color: #FB9A34;
+}
+
+/* line 233, ../scss/chango.scss */
+.km-nova h3 {
+  font-size: 1.25rem;
+}
+
+/* line 236, ../scss/chango.scss */
+.km-nova h3, .km-nova p {
+  margin: 0;
+}
+
+/* line 239, ../scss/chango.scss */
+.view-title {
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  font-size: 1.875rem;
+  color: #5F3202;
+  text-shadow: 2px 2px 0 rgba(204, 125, 39, 0.5);
+  text-transform: capitalize;
+}
+
+/* line 247, ../scss/chango.scss */
+.km-nova .km-drawer .km-content {
+  background-color: #2D282F;
+}
+
+/* line 250, ../scss/chango.scss */
+.km-nova .km-drawer .km-list > li {
+  border-color: #3F3842;
+}
+
+/* line 253, ../scss/chango.scss */
+.km-nova .km-drawer .km-group-title {
+  color: #59505E;
+  background-color: #252127;
+  border-color: #37313A;
+}
+
+/* line 258, ../scss/chango.scss */
+.km-nova .km-drawer .km-listview li.km-state-active {
+  background: #252127;
+}
+
+/* line 261, ../scss/chango.scss */
+.km-nova .km-accent.km-navbar, .km-nova .km-accent.k-toolbar, .km-nova .km-accent.km-tabstrip, .km-nova .km-vertical-tabstrip .km-button.km-state-active:before, .km-nova .km-drawer .km-listview li.km-state-active:before {
+  background: #FB9A34;
+}
+
+/* line 264, ../scss/chango.scss */
+.km-nova .km-badge {
+  background-color: #E45F00;
+  line-height: 1.125rem;
+}
+
+/* line 268, ../scss/chango.scss */
+.km-nova .km-drawer #login-dropdown-list .dropdown-menu {
+  background-color: transparent;
+}
+
+/* line 271, ../scss/chango.scss */
+.km-nova .km-group-title, .km-nova .km-list fieldset legend, .km-nova .km-shim li.km-actionsheet-title {
+  background: #FDF8F2;
+  border-color: #ECE0D4;
+  color: #CEAE90;
+}
+
+/* Icons */
+/* line 277, ../scss/chango.scss */
+.km-heart:after, .km-heart:before {
+  content: "\e045";
+}
+
+@media (min-width: 768px) {
+  /* line 281, ../scss/chango.scss */
+  .modal-dialog {
+    margin: 2rem auto;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* line 286, ../scss/chango.scss */
+  body.standalone .km-navbar {
+    padding-top: 0;
+  }
+}
+@media screen and (orientation: portrait) {
+  /* line 292, ../scss/chango.scss */
+  body.standalone .km-navbar {
+    padding-top: 1rem;
+  }
+
+  /* line 295, ../scss/chango.scss */
+  body.standalone .modal-header {
+    padding-top: 2rem;
+  }
+}

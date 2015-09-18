@@ -1,0 +1,10 @@
+$orange : #FB9A34;
+$brown : #5F3202;
+
+@import 'compass/reset';
+@import 'compass';
+@import 'compass/css3/box-shadow';
+
+@mixin dshadow($one: hsl(34, 60%, 44%) 0 -1px inset, $two: rgba(0,0,0,0.1) 0 1px){ 
+    @include box-shadow($one, $two);    
+}

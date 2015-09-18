@@ -1,0 +1,298 @@
+/* CSS declarations go here */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic,400italic);
+@import "base";
+
+body, .km-nova, .km-tabstrip .km-button{
+	font-family: 'Open Sans', sans-serif;
+	color: $brown;
+  font-size: 16px;
+}
+.km-nova .km-content, .km-nova h1, .km-nova h2, .km-nova h3, .km-nova h4, .km-nova h5, .km-nova h6, .km-nova p, .km-nova .km-list > li, .km-nova a:not([class]), .km-nova .km-external-link{
+    color: $brown;
+}
+a {
+  color: $brown;
+  &:hover, &:focus{
+    color: #683400;
+    text-decoration: none;
+  }
+}
+.map-container {
+  	width: 100%;
+  	max-width: 100%;
+  	height: 300px;
+}
+.geoloc {
+    position: absolute;
+    z-index: 1;
+    top: 1.125rem;
+    right: 1.5rem;
+    font-size: 1.25rem;
+}
+.modal .map-container {
+  	height: 200px;
+}
+.infowindow {
+    width: 250px;
+    padding: 0.5rem;
+  }
+.km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .km-tabstrip, .km-nova .km-drawer .km-navbar, .navbar, .modal-header {
+  	margin: 0;
+    background-color: $orange;
+    @include dshadow;
+    border: none;
+    background-image: none;
+}
+.km-nova .km-tabstrip .km-button.km-state-active {
+    background-color: #E17605;
+    background-image: none;
+}
+.km-nova .km-footer .km-tabstrip .km-button {
+    border-radius: 0;
+    cursor: pointer;
+}
+.navbar {
+    padding: 0.875rem;
+}
+.navbar-fixed-bottom, .km-nova .km-tabstrip {
+    box-shadow: inset 0 1px hsl(34, 60%, 44%), 0 -1px rgba(0,0,0,0.1);
+}
+.modal-dialog {
+    margin: 0 auto;
+}
+.modal-header {
+  	border-radius: 6px 6px 0 0;
+}
+.modal-title{
+	color: #683400;
+}
+.capture canvas, .capture img, .capture video {
+    width: 100%;
+}
+.navbar > .container-fluid .navbar-brand {
+  	padding: 12px 15px;
+}
+.navbar-brand > img {
+  	max-height: 30px;
+}
+.navbar-default .navbar-collapse{
+	border: none;
+}
+.navbar-default .navbar-toggle {
+  	border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: #E69529; 
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+	background-color: #FFF; 
+	color: #f5a31f;
+}
+.navbar-default .navbar-toggle .icon-bar {
+ 	background-color: #683400;
+}
+.navbar-btn.navbar-right {
+    margin-right: 0;
+    background-color: transparent;
+    border: none;
+    color: #683400;
+    padding: 0.125rem 1rem;
+    font-size: 1.25rem;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+  color: #683400;
+}
+#login-dropdown-list .dropdown-menu {
+    min-width: 100%;
+    padding: 0.875rem;
+    box-shadow: none;
+    color: $orange;
+}
+#login-dropdown-list a {
+    text-overflow: ellipsis;
+    max-width: 148px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#login-dropdown-list .caret {
+}
+.km-listview #login-dropdown-list {
+    overflow: visible;
+}
+.km-listview #login-dropdown-list.open > .dropdown-menu{
+    position: relative;
+    margin-top: 1rem;
+}
+.km-listview #login-dropdown-list a {
+    width: 100%;
+    max-width: none;
+    display: block;
+}
+.list-group-item {
+  	border-color: rgba(244, 220, 182, 1);
+    transition: 0.3s ease-in-out;
+ }
+.list-group-item.clearfix {
+    padding: 10px 0 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+}
+.selected {
+    background-color: rgba(245, 163, 31, 0.2);
+}
+.btn-default{
+  	color: $orange;
+  	border-color: #FDCB96;
+}
+.badge {
+  	background-color: $orange;
+}
+.modal-footer {
+    padding: 15px 0;
+}
+/* Image input */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+  }
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+/* Bootstrap override styles */
+.btn-primary, .km-nova .km-button {
+    background-color: $orange;
+    border-color: #C86904;
+    color: #603813;
+    &:hover, &:focus, &.focus {
+      background-color: #E17605;
+      border-color: #8B5E23;
+      color: #603813;
+  }
+}
+/* kendo override styles */
+.km-nova .km-view-title {
+    min-height: 3.625rem;
+}
+.km-nova .km-tabstrip {
+    min-height: 3rem;
+}
+.km-nova .km-tabstrip .km-button {
+    color: #603813;
+}
+.km-nova .km-tabstrip .km-button .km-icon{
+    height: auto;
+    width: auto;
+    font-size: 1.25rem;
+}
+.km-nova span.km-switch {
+    color: $orange;
+}
+.dropdown .km-group-title {
+    display: none;
+}
+.km-listview-accounts #login-dropdown-list a.dropdown-toggle{
+  max-width: none;
+  padding: 1em;
+  color: $orange;
+  display: block;
+  font-size: 1rem;
+}
+.km-nova .km-list > li{
+  font-size: 1rem;
+  padding: 1rem;
+  border-color: #F6EBE0;
+}
+.km-nova .km-list > .map-container {
+    padding: 0 0.5rem 0.5rem;
+}
+.km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .k-toolbar .km-button, .km-nova .k-toolbar .km-icon, .km-nova .km-tabstrip, .km-nova .km-navbar .km-back:before, .km-nova .k-toolbar .km-back:before, .km-nova .km-navbar .km-button, .km-nova .km-view-title {
+    color: #603813;
+}
+.km-nova .km-drawer .km-list > li, .km-nova .km-drawer .km-list > li > .km-listview-link, .km-nova .km-drawer .km-list > li .km-icon {
+    color: $orange;
+}
+.km-nova h3 {
+    font-size: 1.25rem;
+}
+.km-nova h3, .km-nova p {
+  margin: 0;
+}
+.view-title {
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  font-size: 1.875rem;
+  color: $brown;
+  text-shadow: 2px 2px 0 rgba(204,125,39,0.5);
+  text-transform: capitalize;
+}
+.km-nova .km-drawer .km-content {
+    background-color: #2D282F;
+}
+.km-nova .km-drawer .km-list > li {
+    border-color: #3F3842;
+}
+.km-nova .km-drawer .km-group-title {
+    color: #59505E;
+    background-color: #252127;
+    border-color: #37313A;
+}
+.km-nova .km-drawer .km-listview li.km-state-active {
+    background: #252127;
+}
+.km-nova .km-accent.km-navbar, .km-nova .km-accent.k-toolbar, .km-nova .km-accent.km-tabstrip, .km-nova .km-vertical-tabstrip .km-button.km-state-active:before, .km-nova .km-drawer .km-listview li.km-state-active:before {
+    background: $orange;
+}
+.km-nova .km-badge {
+    background-color: #E45F00;
+    line-height: 1.125rem;
+}
+.km-nova .km-drawer #login-dropdown-list .dropdown-menu {
+    background-color: transparent;
+}
+.km-nova .km-group-title, .km-nova .km-list fieldset legend, .km-nova .km-shim li.km-actionsheet-title {
+    background: #FDF8F2;
+    border-color: #ECE0D4;
+    color: #CEAE90;
+}
+/* Icons */
+ .km-heart:after, .km-heart:before{
+  content: "\e045";
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    margin: 2rem auto;
+  }
+}
+@media screen and (orientation:landscape) {
+    body.standalone .km-navbar {
+        padding-top:0;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    body.standalone .km-navbar {
+        padding-top:1rem;
+    }
+    body.standalone .modal-header {
+      padding-top: 2rem;
+    }
+}

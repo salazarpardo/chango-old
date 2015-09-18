@@ -1,0 +1,17 @@
+<template name="map">
+
+<div data-role="view" id="drawer-home" data-layout="drawer-layout" data-title="Chango" data-use-native-scrolling="true" data-after-show="afterShow">
+    <ul data-role="listview" class="inboxList">
+        <li class="map-container">
+          <button type="button" class="geoloc btn btn-primary btn-sm"><i class="glyphicon glyphicon-screenshot"></i></button>
+          {{> googleMap name="exampleMap" options=exampleMapOptions}}
+        </li>
+        {{#each spotMarker}}
+        {{> spotItem}}
+        {{else}}
+        <li class="list-group-item">No hay proyectos</li>
+        {{/each}}
+    </ul>
+</div>
+
+</template>

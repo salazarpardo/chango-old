@@ -1,0 +1,477 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'bcrypt' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.4
+4 verbose install initial load of /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/package.json
+5 verbose readDependencies loading dependencies from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/package.json
+6 silly cache add args [ 'bcrypt', null ]
+7 verbose cache add spec bcrypt
+8 silly cache add parsed spec { raw: 'bcrypt',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'bcrypt',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed bcrypt@*
+10 verbose addNamed "*" is a valid semver range for bcrypt
+11 silly addNameRange { name: 'bcrypt', range: '*', hasData: false }
+12 silly mapToRegistry name bcrypt
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+16 verbose addNameRange registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/bcrypt
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 3:07:42 PM
+20 verbose request id fd88603ca4d272c4
+21 verbose etag "ENBJ1NL03SX71NNGKJI740HX4"
+22 http request GET https://registry.npmjs.org/bcrypt
+23 http 304 https://registry.npmjs.org/bcrypt
+24 silly get cb [ 304,
+24 silly get   { date: 'Sat, 25 Jul 2015 20:07:42 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"ENBJ1NL03SX71NNGKJI740HX4"',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-jfk1031-JFK',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1437854862.574963,VS0,VE83',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/bcrypt from cache
+26 verbose get saving bcrypt to /Users/SalazarPardo/.npm/registry.npmjs.org/bcrypt/.cache.json
+27 silly addNameRange number 2 { name: 'bcrypt', range: '*', hasData: true }
+28 silly addNameRange versions [ 'bcrypt',
+28 silly addNameRange   [ '0.1.2',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.7.2',
+28 silly addNameRange     '0.7.3',
+28 silly addNameRange     '0.7.4',
+28 silly addNameRange     '0.7.5',
+28 silly addNameRange     '0.7.6',
+28 silly addNameRange     '0.7.7',
+28 silly addNameRange     '0.7.8',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.8.2',
+28 silly addNameRange     '0.8.3',
+28 silly addNameRange     '0.8.4' ] ]
+29 silly addNamed bcrypt@0.8.4
+30 verbose addNamed "0.8.4" is a plain semver version for bcrypt
+31 silly cache afterAdd bcrypt@0.8.4
+32 verbose afterAdd /Users/SalazarPardo/.npm/bcrypt/0.8.4/package/package.json not in flight; writing
+33 verbose afterAdd /Users/SalazarPardo/.npm/bcrypt/0.8.4/package/package.json written
+34 silly install resolved [ { name: 'bcrypt',
+34 silly install resolved     description: 'A bcrypt library for NodeJS.',
+34 silly install resolved     keywords:
+34 silly install resolved      [ 'bcrypt',
+34 silly install resolved        'password',
+34 silly install resolved        'auth',
+34 silly install resolved        'authentication',
+34 silly install resolved        'encryption',
+34 silly install resolved        'crypt',
+34 silly install resolved        'crypto' ],
+34 silly install resolved     main: './bcrypt',
+34 silly install resolved     version: '0.8.4',
+34 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
+34 silly install resolved     engines: { node: '>= 0.6.0' },
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+https://github.com/ncb000gt/node.bcrypt.js.git' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
+34 silly install resolved     scripts:
+34 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
+34 silly install resolved        install: 'node-gyp rebuild' },
+34 silly install resolved     dependencies: { bindings: '1.2.1', nan: '1.8.4' },
+34 silly install resolved     devDependencies: { nodeunit: '~0.9.1' },
+34 silly install resolved     contributors:
+34 silly install resolved      [ [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object] ],
+34 silly install resolved     gypfile: true,
+34 silly install resolved     gitHead: '5ca168581369b2d75823b3000803d8edf94ae459',
+34 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js#readme',
+34 silly install resolved     _id: 'bcrypt@0.8.4',
+34 silly install resolved     _shasum: 'fabad077c91c484591a4a34778317ef56478126f',
+34 silly install resolved     _from: 'bcrypt@*',
+34 silly install resolved     _npmVersion: '2.11.1',
+34 silly install resolved     _nodeVersion: '0.10.38',
+34 silly install resolved     _npmUser: { name: 'defunctzombie', email: 'shtylman@gmail.com' },
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'fabad077c91c484591a4a34778317ef56478126f',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/bcrypt/-/bcrypt-0.8.4.tgz' },
+34 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.4.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install bcrypt@0.8.4 into /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango
+36 info installOne bcrypt@0.8.4
+37 verbose installOne of bcrypt to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango not in flight; installing
+38 verbose lock using /Users/SalazarPardo/.npm/_locks/bcrypt-1b1f93feca8e22d9.lock for /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+39 silly install write writing bcrypt 0.8.4 to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+40 verbose unbuild node_modules/bcrypt
+41 silly gentlyRm /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt is being purged from base /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango
+42 verbose gentlyRm don't care about contents; nuking /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+43 verbose tar unpack /Users/SalazarPardo/.npm/bcrypt/0.8.4/package.tgz
+44 verbose tar unpacking to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+45 silly gentlyRm /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt is being purged
+46 verbose gentlyRm don't care about contents; nuking /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 silly gunzTarPerm extractEntry package.json
+49 silly gunzTarPerm extractEntry .npmignore
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm extractEntry bcrypt.js
+53 silly gunzTarPerm extractEntry binding.gyp
+54 silly gunzTarPerm extractEntry .travis.yml
+55 silly gunzTarPerm extractEntry CHANGELOG.md
+56 silly gunzTarPerm extractEntry examples/async_compare.js
+57 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+58 silly gunzTarPerm extractEntry test/async.js
+59 silly gunzTarPerm extractEntry test/repetitions.js
+60 silly gunzTarPerm extractEntry test/sync.js
+61 silly gunzTarPerm extractEntry Makefile
+62 silly gunzTarPerm extractEntry src/bcrypt.cc
+63 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+64 silly gunzTarPerm extractEntry src/blowfish.cc
+65 silly gunzTarPerm extractEntry src/node_blf.h
+66 silly gunzTarPerm extractEntry werker.yml
+67 verbose write writing to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/package.json
+68 info preinstall bcrypt@0.8.4
+69 verbose readDependencies loading dependencies from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/package.json
+70 silly prepareForInstallMany adding bindings@1.2.1 from bcrypt dependencies
+71 silly prepareForInstallMany adding nan@1.8.4 from bcrypt dependencies
+72 verbose readDependencies loading dependencies from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/package.json
+73 silly cache add args [ 'bindings@1.2.1', null ]
+74 verbose cache add spec bindings@1.2.1
+75 silly cache add parsed spec { raw: 'bindings@1.2.1',
+75 silly cache add   scope: null,
+75 silly cache add   name: 'bindings',
+75 silly cache add   rawSpec: '1.2.1',
+75 silly cache add   spec: '1.2.1',
+75 silly cache add   type: 'version' }
+76 silly addNamed bindings@1.2.1
+77 verbose addNamed "1.2.1" is a plain semver version for bindings
+78 silly mapToRegistry name bindings
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/bindings
+82 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+83 silly cache add args [ 'nan@1.8.4', null ]
+84 verbose cache add spec nan@1.8.4
+85 silly cache add parsed spec { raw: 'nan@1.8.4',
+85 silly cache add   scope: null,
+85 silly cache add   name: 'nan',
+85 silly cache add   rawSpec: '1.8.4',
+85 silly cache add   spec: '1.8.4',
+85 silly cache add   type: 'version' }
+86 silly addNamed nan@1.8.4
+87 verbose addNamed "1.8.4" is a plain semver version for nan
+88 silly mapToRegistry name nan
+89 silly mapToRegistry using default registry
+90 silly mapToRegistry registry https://registry.npmjs.org/
+91 silly mapToRegistry uri https://registry.npmjs.org/nan
+92 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+93 verbose request uri https://registry.npmjs.org/bindings
+94 verbose request no auth needed
+95 info attempt registry request try #1 at 3:07:43 PM
+96 http request GET https://registry.npmjs.org/bindings
+97 verbose request uri https://registry.npmjs.org/nan
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 3:07:43 PM
+100 http request GET https://registry.npmjs.org/nan
+101 http 200 https://registry.npmjs.org/bindings
+102 silly get cb [ 200,
+102 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+102 silly get     etag: '"BCS5XYG9ISNJFNKEL5FLOI5HX"',
+102 silly get     'content-type': 'application/json',
+102 silly get     'cache-control': 'max-age=60',
+102 silly get     'content-length': '17974',
+102 silly get     'accept-ranges': 'bytes',
+102 silly get     date: 'Sat, 25 Jul 2015 20:07:43 GMT',
+102 silly get     via: '1.1 varnish',
+102 silly get     age: '19',
+102 silly get     connection: 'keep-alive',
+102 silly get     'x-served-by': 'cache-jfk1022-JFK',
+102 silly get     'x-cache': 'HIT',
+102 silly get     'x-cache-hits': '1',
+102 silly get     'x-timer': 'S1437854863.819746,VS0,VE0',
+102 silly get     vary: 'Accept' } ]
+103 verbose get saving bindings to /Users/SalazarPardo/.npm/registry.npmjs.org/bindings/.cache.json
+104 silly mapToRegistry name bindings
+105 silly mapToRegistry using default registry
+106 silly mapToRegistry registry https://registry.npmjs.org/
+107 silly mapToRegistry uri https://registry.npmjs.org/bindings
+108 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+109 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+109 verbose addRemoteTarball   '14ad6113812d2d37d72e67b4cacb4bb726505f11' ]
+110 info retry fetch attempt 1 at 3:07:44 PM
+111 info attempt registry request try #1 at 3:07:44 PM
+112 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+113 http 200 https://registry.npmjs.org/nan
+114 silly get cb [ 200,
+114 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+114 silly get     etag: '"9T2TEINHQE1CYR42PWQNCEY3X"',
+114 silly get     'content-type': 'application/json',
+114 silly get     'cache-control': 'max-age=60',
+114 silly get     'content-length': '109608',
+114 silly get     'accept-ranges': 'bytes',
+114 silly get     date: 'Sat, 25 Jul 2015 20:07:43 GMT',
+114 silly get     via: '1.1 varnish',
+114 silly get     age: '6',
+114 silly get     connection: 'keep-alive',
+114 silly get     'x-served-by': 'cache-jfk1030-JFK',
+114 silly get     'x-cache': 'HIT',
+114 silly get     'x-cache-hits': '1',
+114 silly get     'x-timer': 'S1437854863.817087,VS0,VE1',
+114 silly get     vary: 'Accept' } ]
+115 verbose get saving nan to /Users/SalazarPardo/.npm/registry.npmjs.org/nan/.cache.json
+116 silly mapToRegistry name nan
+117 silly mapToRegistry using default registry
+118 silly mapToRegistry registry https://registry.npmjs.org/
+119 silly mapToRegistry uri https://registry.npmjs.org/nan
+120 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-1.8.4.tgz not in flight; adding
+121 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-1.8.4.tgz',
+121 verbose addRemoteTarball   '3c76b5382eab33e44b758d2813ca9d92e9342f34' ]
+122 info retry fetch attempt 1 at 3:07:44 PM
+123 info attempt registry request try #1 at 3:07:44 PM
+124 http fetch GET https://registry.npmjs.org/nan/-/nan-1.8.4.tgz
+125 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+126 silly fetchAndShaCheck shasum 14ad6113812d2d37d72e67b4cacb4bb726505f11
+127 verbose addTmpTarball /tmp/npm-13249-991c5791/registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+128 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.2.1
+129 silly cache afterAdd bindings@1.2.1
+130 verbose afterAdd /Users/SalazarPardo/.npm/bindings/1.2.1/package/package.json not in flight; writing
+131 verbose afterAdd /Users/SalazarPardo/.npm/bindings/1.2.1/package/package.json written
+132 http fetch 200 https://registry.npmjs.org/nan/-/nan-1.8.4.tgz
+133 silly fetchAndShaCheck shasum 3c76b5382eab33e44b758d2813ca9d92e9342f34
+134 verbose addTmpTarball /tmp/npm-13249-991c5791/registry.npmjs.org/nan/-/nan-1.8.4.tgz not in flight; adding
+135 verbose addTmpTarball already have metadata; skipping unpack for nan@1.8.4
+136 silly cache afterAdd nan@1.8.4
+137 verbose afterAdd /Users/SalazarPardo/.npm/nan/1.8.4/package/package.json not in flight; writing
+138 verbose afterAdd /Users/SalazarPardo/.npm/nan/1.8.4/package/package.json written
+139 silly install resolved [ { name: 'bindings',
+139 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+139 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+139 silly install resolved     version: '1.2.1',
+139 silly install resolved     author:
+139 silly install resolved      { name: 'Nathan Rajlich',
+139 silly install resolved        email: 'nathan@tootallnate.net',
+139 silly install resolved        url: 'http://tootallnate.net' },
+139 silly install resolved     repository:
+139 silly install resolved      { type: 'git',
+139 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+139 silly install resolved     main: './bindings.js',
+139 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+139 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+139 silly install resolved     license: 'MIT',
+139 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+139 silly install resolved     _id: 'bindings@1.2.1',
+139 silly install resolved     scripts: {},
+139 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+139 silly install resolved     _from: 'bindings@1.2.1',
+139 silly install resolved     _npmVersion: '1.4.14',
+139 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+139 silly install resolved     maintainers: [ [Object], [Object] ],
+139 silly install resolved     dist:
+139 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+139 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+139 silly install resolved     directories: {},
+139 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+139 silly install resolved   { name: 'nan',
+139 silly install resolved     version: '1.8.4',
+139 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+139 silly install resolved     main: 'include_dirs.js',
+139 silly install resolved     repository: { type: 'git', url: 'git://github.com/iojs/nan.git' },
+139 silly install resolved     scripts:
+139 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+139 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+139 silly install resolved     contributors:
+139 silly install resolved      [ [Object],
+139 silly install resolved        [Object],
+139 silly install resolved        [Object],
+139 silly install resolved        [Object],
+139 silly install resolved        [Object],
+139 silly install resolved        [Object],
+139 silly install resolved        [Object] ],
+139 silly install resolved     devDependencies:
+139 silly install resolved      { bindings: '~1.2.1',
+139 silly install resolved        'node-gyp': '~1.0.2',
+139 silly install resolved        pangyp: '~2.0.1',
+139 silly install resolved        tap: '~0.7.1',
+139 silly install resolved        xtend: '~4.0.0' },
+139 silly install resolved     license: 'MIT',
+139 silly install resolved     gitHead: 'ed3bbf4ced0cf7937b4e4164766797f71aa97f3d',
+139 silly install resolved     bugs: { url: 'https://github.com/iojs/nan/issues' },
+139 silly install resolved     homepage: 'https://github.com/iojs/nan#readme',
+139 silly install resolved     _id: 'nan@1.8.4',
+139 silly install resolved     _shasum: '3c76b5382eab33e44b758d2813ca9d92e9342f34',
+139 silly install resolved     _from: 'nan@1.8.4',
+139 silly install resolved     _npmVersion: '2.8.3',
+139 silly install resolved     _nodeVersion: '0.12.2',
+139 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+139 silly install resolved     maintainers: [ [Object], [Object] ],
+139 silly install resolved     dist:
+139 silly install resolved      { shasum: '3c76b5382eab33e44b758d2813ca9d92e9342f34',
+139 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.8.4.tgz' },
+139 silly install resolved     directories: {},
+139 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.8.4.tgz' } ]
+140 info install bindings@1.2.1 into /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+141 info install nan@1.8.4 into /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+142 info installOne bindings@1.2.1
+143 verbose installOne of bindings to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt not in flight; installing
+144 info installOne nan@1.8.4
+145 verbose installOne of nan to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt not in flight; installing
+146 verbose lock using /Users/SalazarPardo/.npm/_locks/bindings-0a8c3f530d2427c1.lock for /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+147 verbose lock using /Users/SalazarPardo/.npm/_locks/nan-f26631754e0a9dca.lock for /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+148 silly install write writing bindings 1.2.1 to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+149 silly install write writing nan 1.8.4 to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+150 verbose unbuild node_modules/bcrypt/node_modules/bindings
+151 verbose unbuild node_modules/bcrypt/node_modules/nan
+152 silly gentlyRm /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings is being purged from base /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango
+153 verbose gentlyRm don't care about contents; nuking /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+154 verbose tar unpack /Users/SalazarPardo/.npm/bindings/1.2.1/package.tgz
+155 verbose tar unpacking to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+156 silly gentlyRm /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings is being purged
+157 verbose gentlyRm don't care about contents; nuking /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+158 silly gentlyRm /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan is being purged from base /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango
+159 verbose gentlyRm don't care about contents; nuking /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+160 silly gunzTarPerm modes [ '755', '644' ]
+161 verbose tar unpack /Users/SalazarPardo/.npm/nan/1.8.4/package.tgz
+162 verbose tar unpacking to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+163 silly gentlyRm /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan is being purged
+164 verbose gentlyRm don't care about contents; nuking /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+165 silly gunzTarPerm modes [ '755', '644' ]
+166 silly gunzTarPerm extractEntry package.json
+167 silly gunzTarPerm extractEntry package.json
+168 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+169 silly gunzTarPerm extractEntry README.md
+170 silly gunzTarPerm extractEntry bindings.js
+171 silly gunzTarPerm extractEntry README.md
+172 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+173 silly gunzTarPerm extractEntry include_dirs.js
+174 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+175 silly gunzTarPerm extractEntry LICENSE.md
+176 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+177 silly gunzTarPerm extractEntry .dntrc
+178 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+179 silly gunzTarPerm extractEntry appveyor.yml
+180 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+181 silly gunzTarPerm extractEntry nan.h
+182 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+183 verbose write writing to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings/package.json
+184 info preinstall bindings@1.2.1
+185 verbose readDependencies loading dependencies from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings/package.json
+186 verbose readDependencies loading dependencies from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings/package.json
+187 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+188 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+189 silly install resolved []
+190 verbose about to build /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+191 info build /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+192 info linkStuff bindings@1.2.1
+193 silly linkStuff bindings@1.2.1 has /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules as its parent node_modules
+194 verbose linkBins bindings@1.2.1
+195 verbose linkMans bindings@1.2.1
+196 verbose rebuildBundles bindings@1.2.1
+197 info install bindings@1.2.1
+198 info postinstall bindings@1.2.1
+199 verbose unlock done using /Users/SalazarPardo/.npm/_locks/bindings-0a8c3f530d2427c1.lock for /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/bindings
+200 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+201 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+202 silly gunzTarPerm extractEntry nan_new.h
+203 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+204 silly gunzTarPerm extractEntry nan_string_bytes.h
+205 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+206 silly gunzTarPerm extractEntry CHANGELOG.md
+207 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+208 verbose write writing to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan/package.json
+209 info preinstall nan@1.8.4
+210 verbose readDependencies loading dependencies from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan/package.json
+211 verbose readDependencies loading dependencies from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan/package.json
+212 silly install resolved []
+213 verbose about to build /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+214 info build /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+215 info linkStuff nan@1.8.4
+216 silly linkStuff nan@1.8.4 has /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules as its parent node_modules
+217 verbose linkBins nan@1.8.4
+218 verbose linkMans nan@1.8.4
+219 verbose rebuildBundles nan@1.8.4
+220 info install nan@1.8.4
+221 info postinstall nan@1.8.4
+222 verbose unlock done using /Users/SalazarPardo/.npm/_locks/nan-f26631754e0a9dca.lock for /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt/node_modules/nan
+223 verbose about to build /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+224 info build /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+225 info linkStuff bcrypt@0.8.4
+226 silly linkStuff bcrypt@0.8.4 has /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules as its parent node_modules
+227 verbose linkBins bcrypt@0.8.4
+228 verbose linkMans bcrypt@0.8.4
+229 verbose rebuildBundles bcrypt@0.8.4
+230 verbose rebuildBundles [ 'bindings', 'nan' ]
+231 info install bcrypt@0.8.4
+232 verbose unsafe-perm in lifecycle false
+233 info bcrypt@0.8.4 Failed to exec install script
+234 verbose unlock done using /Users/SalazarPardo/.npm/_locks/bcrypt-1b1f93feca8e22d9.lock for /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+235 verbose stack Error: bcrypt@0.8.4 install: `node-gyp rebuild`
+235 verbose stack spawn ENOENT
+235 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+235 verbose stack     at ChildProcess.emit (events.js:110:17)
+235 verbose stack     at maybeClose (child_process.js:1015:16)
+235 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+236 verbose pkgid bcrypt@0.8.4
+237 verbose cwd /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango
+238 error Darwin 14.4.0
+239 error argv "node" "/usr/local/bin/npm" "install" "bcrypt"
+240 error node v0.12.4
+241 error npm  v2.11.2
+242 error file sh
+243 error code ELIFECYCLE
+244 error errno ENOENT
+245 error syscall spawn
+246 error bcrypt@0.8.4 install: `node-gyp rebuild`
+246 error spawn ENOENT
+247 error Failed at the bcrypt@0.8.4 install script 'node-gyp rebuild'.
+247 error This is most likely a problem with the bcrypt package,
+247 error not with npm itself.
+247 error Tell the author that this fails on your system:
+247 error     node-gyp rebuild
+247 error You can get their info via:
+247 error     npm owner ls bcrypt
+247 error There is likely additional logging output above.
+248 verbose exit [ 1, true ]
+249 verbose unbuild node_modules/bcrypt
+250 info preuninstall bcrypt@0.8.4
+251 info uninstall bcrypt@0.8.4
+252 verbose unbuild rmStuff bcrypt@0.8.4 from /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules
+253 info postuninstall bcrypt@0.8.4
+254 silly gentlyRm /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt is being purged from base /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango
+255 verbose gentlyRm don't care about contents; nuking /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+256 silly vacuum-fs purging /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules/bcrypt
+257 silly vacuum-fs removing /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango/node_modules
+258 silly vacuum-fs finished vacuuming up to /Users/SalazarPardo/Documents/W/Chango/Meteor/Chango/chango

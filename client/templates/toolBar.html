@@ -1,0 +1,30 @@
+<template name="toolBar">	
+	<li class="list-group-item clearfix">
+	
+		<div class="btn-toolbar" role="toolbar">
+			
+	  		<div class="btn-group btn-group-sm pull-right" role="group">
+	  			<button type="button" class="btn btn-default increment"> 
+	  				<i class="glyphicon glyphicon-thumbs-up" > </i> 
+	  			</button>
+			  	<button type="button" class="btn btn-default decrement"><i class="glyphicon glyphicon-thumbs-down" > 
+			  		</i>
+			  	</button>
+		  	</div>
+		  	{{#if currentUser}}
+				{{#if selectedClass}}
+			  	<div class="btn-group" role="group">
+			  		<button type="button" class="btn btn-default edit" data-toggle="modal" data-target="#formModal">
+			  			<i class="glyphicon glyphicon-pencil" > 
+			  			</i>
+			  		</button>
+			  	
+			  		<button type="button" class="btn btn-default delete">	
+			  			<i class="glyphicon glyphicon-remove" > </i>
+			  		</button>
+				</div>
+				{{/if}}
+			{{/if}}
+		</div>
+	</li>
+</template>

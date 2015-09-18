@@ -1,0 +1,20 @@
+<template name="drawer">
+
+	<div data-role="drawer" id="my-drawer" style="width: 18em" data-views="['drawer-home', 'drawer-starred', 'drawer-user', 'drawer-settings']" data-use-native-scrolling="true" data-before-show="prevent">
+	    <header data-role="header">
+	        <div data-role="navbar" class="navbar-header">
+	            <span data-role="view-title">Menú</span>  
+	            <a data-align="right" data-role="button" class="nav-button" data-icon="settings" href="#drawer-settings"></a>
+	        </div>
+	    </header>
+	    <ul data-role="listview" class="km-listview-icons">
+	        <li data-icon="home"><a class="home" href="#/" data-transition="none">Chango <span class="km-badge">{{ postCount }}</span></a></li>
+	        <li data-icon="heart"><a href="#drawer-starred" data-transition="none">Favorites </a></li>
+	    </ul>
+	    <ul data-role="listview" data-type="group" class="km-listview-accounts">
+	    	<li>Accounts</li>
+	        {{> loginButtons}} 
+	    </ul>
+	</div>
+
+</template>

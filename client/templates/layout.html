@@ -1,0 +1,14 @@
+<template name="layout">
+	<div data-role="layout" data-id="drawer-layout">
+
+		{{> header}}
+
+	    {{#if userStatus}} 
+	   		{{> footer}}
+		{{/if}}
+
+	</div>
+
+	{{> drawer}}
+
+</template>

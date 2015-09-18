@@ -1,0 +1,72 @@
+<template name="modalForm">
+	<!-- Modal -->
+<div id="formModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">{{ formActionTitle }} Idea</h4>
+      </div>
+      <div class="modal-body">
+	<form>
+	  	<div class="form-group">
+	    	<label for="exampleInputTitle">Name of Idea</label>
+	    	<input type="text" class="form-control" id="exampleInputTitle" placeholder="Título">
+	  	</div>
+	   	<div class="form-group">
+		    <label for="exampleInputAddress">Location</label>
+		    <div class="map-container">
+    			{{> googleMap name="modalMap" options=mapOptions}}
+  			</div>
+  			<input type="text" class="form-control hidden" id="exampleInputLocation" placeholder="Location">
+		    <input type="text" class="form-control" id="exampleInputAddress" placeholder="Location">
+	  	</div>
+	  	<div class="form-group">
+	  		<label for="exampleInputImg">Image</label>
+	  		<div class="input-group">
+                <span class="input-group-btn">
+                    <span class="btn btn-default btn-file">
+                       Browse&hellip; <input type="file" id="exampleInputImg" multiple accept="image/*">
+                    </span>
+                </span>
+                <input type="text" class="form-control" readonly>
+            </div>
+	  	</div>
+	  	<!--
+	  <div class="form-group capture">
+	  	<video autoplay></video>
+		<img src="" width="568" height="426">
+		<canvas style="display:none;" width="568" height="426"></canvas>
+	  </div>
+		-->
+
+	   <div class="form-group">
+	    <label for="exampleInputDescription">Description</label>
+	    <textarea name="textarea" rows="2" cols="50" type="text" class="form-control" id="exampleInputDescription" placeholder="Description"></textarea>
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputCategory">Category</label>
+		<select class="form-control" id="exampleInputCategory">
+		  <option>Public space</option>
+		  <option>Art</option>
+		  <option>Environmental Activites</option>
+		  <option>Community Event</option>
+		  <option>Other</option>
+		</select>
+	  </div>
+	    <div class="modal-footer">
+	  	<button type="submit" class="btn btn-success"> {{ formActionTitle }} </button>
+	  	</div>
+	</form>
+	</div>
+	<!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> 
+      -->
+    </div>
+  </div>
+</div>
+  
+</template>

@@ -1,0 +1,9 @@
+<template name="spotItem">	
+	<li class="list-group-item spot {{selectedClass}}">
+  		<span class="badge"><i class="glyphicon {{countIconVal}}"> </i> {{ score }}</span>
+    	<h3 class="list-group-item-heading"><a class="title-link" href="#">{{ title }}</a></h3>
+    	<span class="author meta">Por: <strong>{{username}}</strong></span>
+    	<p class="list-group-item-text">{{ address }}</p>
+		{{> toolBar}}
+    </li>
+</template>
