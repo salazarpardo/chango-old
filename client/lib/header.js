@@ -23,7 +23,7 @@ Template.header.helpers({
 
 Template.header.onCreated(function() {
 	if (window.navigator.standalone){
-		      $('body').addClass('standalone');
+		     // $('body').addClass('standalone');
 	}
 });
 /*

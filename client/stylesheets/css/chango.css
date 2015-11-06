@@ -1,6 +1,5 @@
 /* CSS declarations go here */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900,600italic|Lobster+Two:400italic,700italic|Material+Icons);
 /* line 5, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,57 +65,84 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../scss/chango.scss */
-body, .km-nova, .km-tabstrip .km-button {
-  font-family: 'Open Sans', sans-serif;
+/* line 5, ../scss/chango.scss */
+body,
+.km-nova,
+.km-tabstrip .km-button {
+  font-family: 'Source Sans Pro', sans-serif;
   color: #5F3202;
   font-size: 16px;
 }
 
-/* line 11, ../scss/chango.scss */
-.km-nova .km-content, .km-nova h1, .km-nova h2, .km-nova h3, .km-nova h4, .km-nova h5, .km-nova h6, .km-nova p, .km-nova .km-list > li, .km-nova a:not([class]), .km-nova .km-external-link {
+/* line 13, ../scss/chango.scss */
+.km-nova .km-content,
+.km-nova h1,
+.km-nova h2,
+.km-nova h3,
+.km-nova h4,
+.km-nova h5,
+.km-nova h6,
+.km-nova p,
+.km-nova .km-list > li,
+.km-nova a:not([class]),
+.km-nova .km-external-link {
   color: #5F3202;
 }
 
-/* line 14, ../scss/chango.scss */
+/* line 27, ../scss/chango.scss */
 a {
   color: #5F3202;
 }
-/* line 16, ../scss/chango.scss */
+/* line 29, ../scss/chango.scss */
 a:hover, a:focus {
   color: #683400;
   text-decoration: none;
 }
 
-/* line 21, ../scss/chango.scss */
+/* line 36, ../scss/chango.scss */
+strong {
+  font-weight: 900;
+}
+
+/* line 39, ../scss/chango.scss */
 .map-container {
   width: 100%;
   max-width: 100%;
   height: 300px;
 }
 
-/* line 26, ../scss/chango.scss */
+/* line 45, ../scss/chango.scss */
 .geoloc {
   position: absolute;
   z-index: 1;
   top: 1.125rem;
   right: 1.5rem;
-  font-size: 1.25rem;
+  padding: 0.5rem 0.5rem 0.25rem;
 }
 
-/* line 33, ../scss/chango.scss */
+/* line 53, ../scss/chango.scss */
 .modal .map-container {
   height: 200px;
 }
 
-/* line 36, ../scss/chango.scss */
+/* line 57, ../scss/chango.scss */
 .infowindow {
   width: 250px;
   padding: 0.5rem;
 }
 
-/* line 40, ../scss/chango.scss */
-.km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .km-tabstrip, .km-nova .km-drawer .km-navbar, .navbar, .modal-header {
+/* line 62, ../scss/chango.scss */
+.km-left-drawer {
+  width: 14em;
+}
+
+/* line 66, ../scss/chango.scss */
+.km-nova .km-navbar,
+.km-nova .k-toolbar,
+.km-nova .km-tabstrip,
+.km-nova .km-drawer .km-navbar,
+.navbar,
+.modal-header {
   margin: 0;
   background-color: #FB9A34;
   -moz-box-shadow: #b4792d 0 -1px inset, rgba(0, 0, 0, 0.1) 0 1px;
@@ -126,85 +152,91 @@ a:hover, a:focus {
   background-image: none;
 }
 
-/* line 47, ../scss/chango.scss */
+/* line 79, ../scss/chango.scss */
 .km-nova .km-tabstrip .km-button.km-state-active {
   background-color: #E17605;
   background-image: none;
 }
 
-/* line 51, ../scss/chango.scss */
+/* line 84, ../scss/chango.scss */
 .km-nova .km-footer .km-tabstrip .km-button {
   border-radius: 0;
   cursor: pointer;
 }
 
-/* line 55, ../scss/chango.scss */
+/* line 89, ../scss/chango.scss */
 .navbar {
   padding: 0.875rem;
 }
 
-/* line 58, ../scss/chango.scss */
-.navbar-fixed-bottom, .km-nova .km-tabstrip {
+/* line 93, ../scss/chango.scss */
+.navbar-fixed-bottom,
+.km-nova .km-tabstrip {
   box-shadow: inset 0 1px #b4792d, 0 -1px rgba(0, 0, 0, 0.1);
 }
 
-/* line 61, ../scss/chango.scss */
+/* line 98, ../scss/chango.scss */
 .modal-dialog {
   margin: 0 auto;
 }
 
-/* line 64, ../scss/chango.scss */
+/* line 102, ../scss/chango.scss */
 .modal-header {
   border-radius: 6px 6px 0 0;
 }
 
-/* line 67, ../scss/chango.scss */
+/* line 106, ../scss/chango.scss */
 .modal-title {
   color: #683400;
 }
 
-/* line 70, ../scss/chango.scss */
-.capture canvas, .capture img, .capture video {
+/* line 110, ../scss/chango.scss */
+.capture canvas,
+.capture img,
+.capture video {
   width: 100%;
 }
 
-/* line 73, ../scss/chango.scss */
+/* line 116, ../scss/chango.scss */
 .navbar > .container-fluid .navbar-brand {
   padding: 12px 15px;
 }
 
-/* line 76, ../scss/chango.scss */
+/* line 120, ../scss/chango.scss */
 .navbar-brand > img {
   max-height: 30px;
 }
 
-/* line 79, ../scss/chango.scss */
+/* line 124, ../scss/chango.scss */
 .navbar-default .navbar-collapse {
   border: none;
 }
 
-/* line 82, ../scss/chango.scss */
+/* line 128, ../scss/chango.scss */
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
 
-/* line 85, ../scss/chango.scss */
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+/* line 132, ../scss/chango.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
   background-color: #E69529;
 }
 
-/* line 88, ../scss/chango.scss */
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+/* line 137, ../scss/chango.scss */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
   background-color: #FFF;
   color: #f5a31f;
 }
 
-/* line 92, ../scss/chango.scss */
+/* line 144, ../scss/chango.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #683400;
 }
 
-/* line 95, ../scss/chango.scss */
+/* line 148, ../scss/chango.scss */
 .navbar-btn.navbar-right {
   margin-right: 0;
   background-color: transparent;
@@ -214,12 +246,14 @@ a:hover, a:focus {
   font-size: 1.25rem;
 }
 
-/* line 103, ../scss/chango.scss */
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+/* line 157, ../scss/chango.scss */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
   color: #683400;
 }
 
-/* line 106, ../scss/chango.scss */
+/* line 163, ../scss/chango.scss */
 #login-dropdown-list .dropdown-menu {
   min-width: 100%;
   padding: 0.875rem;
@@ -227,7 +261,7 @@ a:hover, a:focus {
   color: #FB9A34;
 }
 
-/* line 112, ../scss/chango.scss */
+/* line 170, ../scss/chango.scss */
 #login-dropdown-list a {
   text-overflow: ellipsis;
   max-width: 148px;
@@ -235,31 +269,31 @@ a:hover, a:focus {
   overflow: hidden;
 }
 
-/* line 120, ../scss/chango.scss */
+/* line 179, ../scss/chango.scss */
 .km-listview #login-dropdown-list {
   overflow: visible;
 }
 
-/* line 123, ../scss/chango.scss */
+/* line 183, ../scss/chango.scss */
 .km-listview #login-dropdown-list.open > .dropdown-menu {
   position: relative;
   margin-top: 1rem;
 }
 
-/* line 127, ../scss/chango.scss */
+/* line 188, ../scss/chango.scss */
 .km-listview #login-dropdown-list a {
   width: 100%;
   max-width: none;
   display: block;
 }
 
-/* line 132, ../scss/chango.scss */
+/* line 194, ../scss/chango.scss */
 .list-group-item {
   border-color: #f4dcb6;
   transition: 0.3s ease-in-out;
 }
 
-/* line 136, ../scss/chango.scss */
+/* line 199, ../scss/chango.scss */
 .list-group-item.clearfix {
   padding: 10px 0 0;
   bottom: 0;
@@ -269,34 +303,34 @@ a:hover, a:focus {
   border: none;
 }
 
-/* line 144, ../scss/chango.scss */
+/* line 208, ../scss/chango.scss */
 .selected {
   background-color: rgba(245, 163, 31, 0.2);
 }
 
-/* line 147, ../scss/chango.scss */
+/* line 212, ../scss/chango.scss */
 .btn-default {
   color: #FB9A34;
   border-color: #FDCB96;
 }
 
-/* line 151, ../scss/chango.scss */
+/* line 217, ../scss/chango.scss */
 .badge {
   background-color: #FB9A34;
 }
 
-/* line 154, ../scss/chango.scss */
+/* line 221, ../scss/chango.scss */
 .modal-footer {
   padding: 15px 0;
 }
 
 /* Image input */
-/* line 158, ../scss/chango.scss */
+/* line 227, ../scss/chango.scss */
 .btn-file {
   position: relative;
   overflow: hidden;
 }
-/* line 161, ../scss/chango.scss */
+/* line 230, ../scss/chango.scss */
 .btn-file input[type=file] {
   position: absolute;
   top: 0;
@@ -312,60 +346,64 @@ a:hover, a:focus {
   display: block;
 }
 
-/* line 176, ../scss/chango.scss */
+/* line 246, ../scss/chango.scss */
 input[readonly] {
   background-color: white !important;
   cursor: text !important;
 }
 
 /* Bootstrap override styles */
-/* line 181, ../scss/chango.scss */
-.btn-primary, .km-nova .km-button {
+/* line 253, ../scss/chango.scss */
+.btn-primary,
+.km-nova .km-button {
   background-color: #FB9A34;
   border-color: #C86904;
   color: #603813;
 }
-/* line 185, ../scss/chango.scss */
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .km-nova .km-button:hover, .km-nova .km-button:focus, .km-nova .km-button.focus {
+/* line 258, ../scss/chango.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
+.km-nova .km-button:hover,
+.km-nova .km-button:focus,
+.km-nova .km-button.focus {
   background-color: #E17605;
   border-color: #8B5E23;
   color: #603813;
 }
 
 /* kendo override styles */
-/* line 192, ../scss/chango.scss */
+/* line 269, ../scss/chango.scss */
 .km-nova .km-view-title {
-  min-height: 3.625rem;
+  min-height: 3.875rem;
 }
 
-/* line 195, ../scss/chango.scss */
+/* line 273, ../scss/chango.scss */
 .km-nova .km-tabstrip {
   min-height: 3rem;
 }
 
-/* line 198, ../scss/chango.scss */
+/* line 277, ../scss/chango.scss */
 .km-nova .km-tabstrip .km-button {
   color: #603813;
 }
 
-/* line 201, ../scss/chango.scss */
+/* line 281, ../scss/chango.scss */
 .km-nova .km-tabstrip .km-button .km-icon {
   height: auto;
   width: auto;
   font-size: 1.25rem;
 }
 
-/* line 206, ../scss/chango.scss */
+/* line 287, ../scss/chango.scss */
 .km-nova span.km-switch {
   color: #FB9A34;
 }
 
-/* line 209, ../scss/chango.scss */
+/* line 291, ../scss/chango.scss */
 .dropdown .km-group-title {
   display: none;
 }
 
-/* line 212, ../scss/chango.scss */
+/* line 295, ../scss/chango.scss */
 .km-listview-accounts #login-dropdown-list a.dropdown-toggle {
   max-width: none;
   padding: 1em;
@@ -374,39 +412,55 @@ input[readonly] {
   font-size: 1rem;
 }
 
-/* line 219, ../scss/chango.scss */
+/* line 303, ../scss/chango.scss */
 .km-nova .km-list > li {
   font-size: 1rem;
   padding: 1rem;
   border-color: #F6EBE0;
 }
 
-/* line 224, ../scss/chango.scss */
+/* line 309, ../scss/chango.scss */
+.km-nova .km-list > .spot.selected {
+  background-color: #FAF7F4;
+}
+
+/* line 313, ../scss/chango.scss */
 .km-nova .km-list > .map-container {
   padding: 0 0.5rem 0.5rem;
 }
 
-/* line 227, ../scss/chango.scss */
-.km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .k-toolbar .km-button, .km-nova .k-toolbar .km-icon, .km-nova .km-tabstrip, .km-nova .km-navbar .km-back:before, .km-nova .k-toolbar .km-back:before, .km-nova .km-navbar .km-button, .km-nova .km-view-title {
+/* line 317, ../scss/chango.scss */
+.km-nova .km-navbar,
+.km-nova .k-toolbar,
+.km-nova .k-toolbar .km-button,
+.km-nova .k-toolbar .km-icon,
+.km-nova .km-tabstrip,
+.km-nova .km-navbar .km-back:before,
+.km-nova .k-toolbar .km-back:before,
+.km-nova .km-navbar .km-button,
+.km-nova .km-view-title {
   color: #603813;
 }
 
-/* line 230, ../scss/chango.scss */
-.km-nova .km-drawer .km-list > li, .km-nova .km-drawer .km-list > li > .km-listview-link, .km-nova .km-drawer .km-list > li .km-icon {
+/* line 329, ../scss/chango.scss */
+.km-nova .km-drawer .km-list > li,
+.km-nova .km-drawer .km-list > li > .km-listview-link,
+.km-nova .km-drawer .km-list > li .km-icon {
   color: #FB9A34;
 }
 
-/* line 233, ../scss/chango.scss */
+/* line 335, ../scss/chango.scss */
 .km-nova h3 {
   font-size: 1.25rem;
 }
 
-/* line 236, ../scss/chango.scss */
-.km-nova h3, .km-nova p {
+/* line 339, ../scss/chango.scss */
+.km-nova h3,
+.km-nova p {
   margin: 0;
 }
 
-/* line 239, ../scss/chango.scss */
+/* line 344, ../scss/chango.scss */
 .view-title {
   font-family: 'Lobster Two', cursive;
   font-style: italic;
@@ -416,77 +470,92 @@ input[readonly] {
   text-transform: capitalize;
 }
 
-/* line 247, ../scss/chango.scss */
+/* line 353, ../scss/chango.scss */
 .km-nova .km-drawer .km-content {
   background-color: #2D282F;
 }
 
-/* line 250, ../scss/chango.scss */
+/* line 357, ../scss/chango.scss */
 .km-nova .km-drawer .km-list > li {
   border-color: #3F3842;
 }
 
-/* line 253, ../scss/chango.scss */
+/* line 361, ../scss/chango.scss */
 .km-nova .km-drawer .km-group-title {
   color: #59505E;
   background-color: #252127;
   border-color: #37313A;
 }
 
-/* line 258, ../scss/chango.scss */
+/* line 367, ../scss/chango.scss */
 .km-nova .km-drawer .km-listview li.km-state-active {
   background: #252127;
 }
 
-/* line 261, ../scss/chango.scss */
-.km-nova .km-accent.km-navbar, .km-nova .km-accent.k-toolbar, .km-nova .km-accent.km-tabstrip, .km-nova .km-vertical-tabstrip .km-button.km-state-active:before, .km-nova .km-drawer .km-listview li.km-state-active:before {
+/* line 371, ../scss/chango.scss */
+.km-nova .km-accent.km-navbar,
+.km-nova .km-accent.k-toolbar,
+.km-nova .km-accent.km-tabstrip,
+.km-nova .km-vertical-tabstrip .km-button.km-state-active:before,
+.km-nova .km-drawer .km-listview li.km-state-active:before {
   background: #FB9A34;
 }
 
-/* line 264, ../scss/chango.scss */
+/* line 379, ../scss/chango.scss */
 .km-nova .km-badge {
-  background-color: #E45F00;
+  background-color: #FF8700;
   line-height: 1.125rem;
 }
 
-/* line 268, ../scss/chango.scss */
+/* line 384, ../scss/chango.scss */
 .km-nova .km-drawer #login-dropdown-list .dropdown-menu {
   background-color: transparent;
 }
 
-/* line 271, ../scss/chango.scss */
-.km-nova .km-group-title, .km-nova .km-list fieldset legend, .km-nova .km-shim li.km-actionsheet-title {
+/* line 388, ../scss/chango.scss */
+.km-nova .km-group-title,
+.km-nova .km-list fieldset legend,
+.km-nova .km-shim li.km-actionsheet-title {
   background: #FDF8F2;
   border-color: #ECE0D4;
   color: #CEAE90;
 }
 
+/* line 395, ../scss/chango.scss */
+.km-nova .km-thumbnail {
+  width: 10em;
+  height: 10em;
+  margin: 2em auto;
+  display: block;
+  float: none;
+}
+
 /* Icons */
-/* line 277, ../scss/chango.scss */
-.km-heart:after, .km-heart:before {
+/* line 404, ../scss/chango.scss */
+.km-heart:after,
+.km-heart:before {
   content: "\e045";
 }
 
 @media (min-width: 768px) {
-  /* line 281, ../scss/chango.scss */
+  /* line 410, ../scss/chango.scss */
   .modal-dialog {
     margin: 2rem auto;
   }
 }
-@media screen and (orientation: landscape) {
-  /* line 286, ../scss/chango.scss */
-  body.standalone .km-navbar {
-    padding-top: 0;
-  }
+/*
+@media screen and (orientation:landscape) {
+    body.standalone .km-navbar {
+        padding-top:0;
+    }
 }
-@media screen and (orientation: portrait) {
-  /* line 292, ../scss/chango.scss */
-  body.standalone .km-navbar {
-    padding-top: 1rem;
-  }
 
-  /* line 295, ../scss/chango.scss */
-  body.standalone .modal-header {
-    padding-top: 2rem;
-  }
+@media screen and (orientation:portrait) {
+    body.standalone .km-navbar {
+        padding-top:1rem;
+    }
+    body.standalone .modal-header {
+      padding-top: 2rem;
+    }
 }
+*/

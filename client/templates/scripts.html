@@ -1,64 +1,61 @@
 <template name="scripts">
-
-<script>
+    <script>
     function afterShow(e) {
-      if (GoogleMaps.loaded()) {
-        var map = GoogleMaps.maps.exampleMap.instance;
-        google.maps.event.trigger(map, 'resize');
-      }    
+        if (GoogleMaps.loaded()) {
+            var map = GoogleMaps.maps.exampleMap.instance;
+            google.maps.event.trigger(map, 'resize');
+        }
     }
 
     function onTabSelect(e) {
         oldIndex = this.currentItem().index(); // store-it 
-        newIndex = e.item.index(); 
+        newIndex = e.item.index();
         console.log(oldIndex, newIndex);
-        if (newIndex == 0){
-          var map = GoogleMaps.maps.exampleMap.instance;
-          console.log(map);
-          google.maps.event.trigger(map, 'resize');
+        if (newIndex == 0) {
+            var map = GoogleMaps.maps.exampleMap.instance;
+            console.log(map);
+            google.maps.event.trigger(map, 'resize');
+        } else if (newIndex == 1) {
+            e.preventDefault(); //prevent the tab selection
+            $('#formModal').modal('show');
+            Session.set('Edit', false);
         }
-        else if (newIndex == 1){
-          e.preventDefault(); //prevent the tab selection
-          $('#formModal').modal('show');
-          Session.set('Edit', false);
-        } 
 
     }
 
     $(".map-container").kendoTouch({
         enableSwipe: true,
-        swipe: function (e) {
+        swipe: function(e) {
             e.preventDefault();
         }
     });
 
-    $('#formModal').on('shown.bs.modal', function (e) {
-            var map = GoogleMaps.maps.modalMap.instance;
-            google.maps.event.trigger(map, 'resize');
+    $('#formModal').on('shown.bs.modal', function(e) {
+        var map = GoogleMaps.maps.modalMap.instance;
+        google.maps.event.trigger(map, 'resize');
     });
 
     // Image input
 
     $(document).on('change', '.btn-file :file', function() {
-      var input = $(this),
-          numFiles = input.get(0).files ? input.get(0).files.length : 1,
-          label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-      input.trigger('fileselect', [numFiles, label]);
+        var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
     });
-    $(document).ready( function() {
+    $(document).ready(function() {
         $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
-            
+
             var input = $(this).parents('.input-group').find(':text'),
                 log = numFiles > 1 ? numFiles + ' files selected' : label;
-            
-            if( input.length ) {
+
+            if (input.length) {
                 input.val(log);
             } else {
-                if( log ) alert(log);
+                if (log) alert(log);
             }
-            
+
         });
     });
-</script>
-
+    </script>
 </template>

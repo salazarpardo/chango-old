@@ -1,11 +1,131 @@
-<template name="favorites">	
-	<div data-role="view" id="drawer-starred" data-layout="drawer-layout" data-title="Favorites" data-use-native-scrolling="true">
-	    <ul data-role="listview">
-	        <li data-icon="heart">Monday meeting</li>
-	        <li data-icon="heart">Regarding org chart changes</li>
-	        <li data-icon="heart">Re: Regarding org chart changes</li>
-	        <li data-icon="heart">Your Costume is ready</li>
-	        <li data-icon="heart">Out tonight?</li>
-	    </ul>
-	</div>
+<template name="favorites">
+    <div data-role="view" id="drawer-starred" data-layout="drawer-layout" data-title="Favorites" data-use-native-scrolling="true">
+        <!--
+		<ul data-role="listview">
+			<li data-icon="heart">Monday meeting</li>
+			<li data-icon="heart">Regarding org chart changes</li>
+			<li data-icon="heart">Re: Regarding org chart changes</li>
+			<li data-icon="heart">Your Costume is ready</li>
+			<li data-icon="heart">Out tonight?</li>
+		</ul>
+		-->
+        <div class="demo-section k-content">
+            <div id="droptarget" class="k-header">Drag the small circle here.</div>
+            <div id="draggable"></div>
+        </div>
+        <script>
+        function draggableOnDragStart(e) {
+            console.log("dragstart");
+
+            $("#draggable").addClass("hollow");
+            $("#droptarget").text("Drop here.");
+            $("#droptarget").removeClass("painted");
+        }
+
+        function draggableOnDrag(e) {
+            console.log("drag");
+        }
+
+        function draggableOnCancel(e) {
+            console.log("drag cancel");
+        }
+
+        function draggableOnDragEnd(e) {
+            console.log("dragend");
+
+            var draggable = $("#draggable");
+
+            if (!draggable.data("kendoDraggable").dropped) {
+                // drag ended outside of any droptarget
+                $("#droptarget").text("Try again!");
+            }
+
+            draggable.removeClass("hollow");
+        }
+
+        function droptargetOnDragEnter(e) {
+            console.log("dragenter");
+
+            $("#droptarget").text("Now drop...");
+            $("#droptarget").addClass("painted");
+        }
+
+        function droptargetOnDragLeave(e) {
+            console.log("dragleave");
+
+            $("#droptarget").text("Drop here.");
+            $("#droptarget").removeClass("painted");
+        }
+
+        function droptargetOnDrop(e) {
+            console.log("drop");
+
+            $("#droptarget").text("You did great!");
+            $("#draggable").removeClass("hollow");
+        }
+
+        $(document).ready(function() {
+            $("#draggable").kendoDraggable({
+                hint: function() {
+                    return $("#draggable").clone();
+                },
+                dragstart: draggableOnDragStart,
+                drag: draggableOnDrag,
+                dragend: draggableOnDragEnd,
+                dragcancel: draggableOnCancel
+            });
+
+            $("#droptarget").kendoDropTarget({
+                dragenter: droptargetOnDragEnter,
+                dragleave: droptargetOnDragLeave,
+                drop: droptargetOnDrop
+            });
+        });
+        </script>
+        <div class="box">
+            <h4>Console log</h4>
+            <div class="console"></div>
+        </div>
+        <style>
+        #draggable {
+            cursor: move;
+            position: absolute;
+            top: 260px;
+            left: 50%;
+            margin-left: -28px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: #03a9f4;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+        }
+        
+        .painted {
+            background-color: #03a9f4;
+            color: #fff;
+        }
+        
+        #draggable.hollow {
+            cursor: default;
+            background: #ececec;
+        }
+        
+        #droptarget {
+            height: 200px;
+            width: 200px;
+            font-size: 14px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+            margin: 0 auto;
+            cursor: default;
+            border: 1px solid #999;
+        }
+        
+        .demo-section {
+            height: 300px;
+            position: relative;
+        }
+        </style>
+    </div>
 </template>

@@ -1,12 +1,13 @@
-
-
 Meteor.subscribe('theSpots');
 
 Meteor.subscribe('users');
 
 Meteor.startup(function() {
 
-    var app = new kendo.mobile.Application(document.body, { skin: "nova" });
+    var app = new kendo.mobile.Application($(document.body), {
+        skin: "nova",
+        statusBarStyle: "black-translucent"
+    });
 
     // reset global drawer instance, for demo purposes
     // kendo.mobile.ui.Drawer.current = null;

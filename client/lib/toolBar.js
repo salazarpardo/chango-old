@@ -6,6 +6,13 @@ Template.toolBar.helpers({
         if(spotId == selectedSpot){
           return 'selected'
         }
+      },
+       isAuthor: function(){
+        var userId = Meteor.userId();
+        var authorId = this.createdBy;
+        if(userId == authorId){
+          return 'true'
+        }
       }
 
 });
